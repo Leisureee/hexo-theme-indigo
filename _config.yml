@@ -4,29 +4,33 @@
 # 添加新菜单项遵循以下规则
 # menu:
 #  link:               fontawesome图标，省略前缀，本主题前缀为 icon-，必须
-#    text: About       菜单显示的文字，如果省略即默认与图标一致，首字母会转大写
-#    url: /about       链接，绝对或相对路径，必须。
+#    text: Friends       菜单显示的文字，如果省略即默认与图标一致，首字母会转大写
+#    url: /friends         链接，绝对或相对路径，必须。
 #    target: _blank    是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: 主页
+    text: Home
     url: /
   archives:
+    text: Archives
     url: /archives
   tags:
+    text: Tags
     url: /tags
   th-list:
     text: Categories
     url: /categories
   github:
-    url: https://github.com/yscoder
+    text: Github
+    url: https://github.com/leisureee
     target: _blank
-  weibo:
-    url: http://www.weibo.com/ysweb
+  twitter:
+    text: Twitter
+    url: https://twitter.com/Griouges
     target: _blank
-  link:
-    text: 测试
-    url: /custom
+  info-circle:
+    text: About
+    url: /about
 
 # 你的头像url
 avatar: /img/avatar.jpg
@@ -38,7 +42,7 @@ brand: /img/brand.jpg
 favicon: /favicon.ico
 
 # email
-email: 634206017@qq.com
+email: 534619360@qq.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -63,7 +67,7 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 谢谢大爷~
+  title: 感谢投食~
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
@@ -79,7 +83,8 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页留言内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: 这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
+#postMessage: 本文章的地址：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
+postMessage: ''
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
@@ -125,14 +130,14 @@ gitalk: false
 
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: false # 如果你想使用valine，请将值设置为 true
-  appId:  # your leancloud appId
-  appKey:  # your leancloud appKey
-  notify: false # Mail notify
+  enable: true # 如果你想使用valine，请将值设置为 true
+  appId: 6rE8tjYl4DBBkMisFb7lAuK2-gzGzoHsz # your leancloud appId
+  appKey: J7WNtSjU1SMuEqkD0KzOVwuL # your leancloud appKey
+  notify: true # Mail notify
   verify: false # Verify code
-  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  placeholder: Just go go # Comment Box placeholder
-  guest_info: nick,mail,link # Comment header info
+  avatar: robohash # Gravatar style : mm/identicon/monsterid/wavatar/retro/robohash/hide
+  placeholder: 说点什么吧~ # Comment Box placeholder
+  guest_info: nick,mail #,link # Comment header info
   pageSize: 10 # comment list page size
 
 # 是否开启Hyper Comments，填写id则启用，false则禁用。http://hypercomments.com
@@ -147,10 +152,10 @@ hyper_id: false
 canonical: false
 
 # 版权起始年份
-since_year: 2015
+since_year: 2018
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: 干啥啥不行，吃饭第一名
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
@@ -160,7 +165,7 @@ visit_counter:
 # 动态定义title
 title_change:
   normal: (つェ⊂)咦!又好了!
-  leave: 死鬼去哪里了！
+  leave: 朸?渄恴g个?喏o溊客??f
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false
@@ -170,4 +175,4 @@ cdn: true
 lightbox: true
 
 # icp备案号  ICP_license: 京ICP备1234556号-1
-ICP_license: false
+ICP_license: 赣ICP备18010727号
